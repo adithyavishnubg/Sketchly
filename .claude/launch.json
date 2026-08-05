@@ -1,0 +1,51 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "react-demo",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev",
+        "--workspace=quickdraw-react-demo"
+      ],
+      "port": 5199,
+      "autoPort": true
+    },
+    {
+      "name": "website",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev",
+        "--workspace=quickdraw-website"
+      ],
+      "port": 4399,
+      "autoPort": true
+    },
+    {
+      "name": "app",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev",
+        "--workspace=quickdraw-app",
+        "--",
+        "--port",
+        "5299",
+        "--strictPort"
+      ],
+      "port": 5299
+    },
+    {
+      "name": "docs",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "dev",
+        "--workspace=quickdraw-docs"
+      ],
+      "port": 4499
+    }
+  ]
+}
